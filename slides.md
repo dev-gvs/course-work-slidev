@@ -1,38 +1,32 @@
 ---
-# try also 'default' to start simple
+# основная тема
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
+# случайное изображение для заднего фона из Unsplash коллекции
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
+# применить этот Windi CSS класс к текущему слайду
 class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+# подсветка кода https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# show line numbers in code blocks
+# показывать ли номер линии в блоках с кодом
 lineNumbers: false
-# some information about the slides, markdown enabled
+# дополнительная информация о слайдах
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
-drawings:
-  persist: false
+  ## Курсовая работа по Slidev
+  Выполнил Гусельников Валентин, ВТиП-402, Торайгыров университет, 2021 г.
 ---
 
-# Welcome to Slidev
+# Добро пожаловать в Slidev
 
-Presentation slides for developers
+Слайды презентаций для разработчиков
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
+    Нажмите Space чтобы перейти на следующую страницу <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+  <button @click="$slidev.nav.openInEditor()" title="Открыть в редакторе" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
   <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
@@ -42,8 +36,21 @@ Presentation slides for developers
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Последний комментарий в виде блока каждого слайда будет использован в качестве заметок.
+Он будет отображаться в режиме Презентации вместе со слайдом [Подробнее в документации](https://sli.dev/guide/syntax.html#notes)
 -->
+
+---
+
+# Первый слайд
+
+Текст в первом слайде
+
+---
+
+# Второй слайд
+
+Текст второго слайда
 
 ---
 
