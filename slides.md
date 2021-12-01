@@ -37,7 +37,8 @@ info: |
 
 <!--
 Последний комментарий в виде блока каждого слайда будет использован в качестве заметок.
-Он будет отображаться в режиме Презентации вместе со слайдом [Подробнее в документации](https://sli.dev/guide/syntax.html#notes)
+Он будет отображаться в режиме Презентации вместе со слайдом
+[Подробнее в документации](https://sli.dev/guide/syntax.html#notes)
 -->
 
 ---
@@ -54,26 +55,26 @@ info: |
 
 ---
 
-# What is Slidev?
+# Что такое Slidev?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Slidev это создатель слайдов и презентатор, предназначенный для разработчиков, имеющий следующие возможности
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- 📝 **Основан на тексте** - сосредоточьтесь на содержимом с помощью Markdown, а стилизуйте позже
+- 🎨 **Темы** - темами можно делиться и использовать с помощью пакетов npm
+- 🧑‍💻 **Для разработчиков** - подсветка кода, live coding с автодополнением
+- 🤹 **Интерактивность** - встраивание компонентов Vue для улучшения презентации
+- 🎥 **Запись** - встроенная запись и просмотр камеры
+- 📤 **Портативность** - экспорт в PDF, PNG или даже в SPA (Single Page Application)
+- 🛠 **Кастомизация** - на веб-странице возможно все
 
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+Более подробно [Почему Slidev?](https://sli.dev/guide/why)
 
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
+Можно использовать `style` тэг в markdown чтобы изменить стиль текущего слайда.
+Подробнее: https://sli.dev/guide/syntax#embedded-styles
 -->
 
 <style>
@@ -89,36 +90,13 @@ h1 {
 </style>
 
 ---
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Code
+# Код
 
-Use code snippets and get the highlighting directly![^1]
+Используй фрагменты кода и получайте его подсветку![^1]
 
 ```ts {all|2|1-6|9|all}
 interface User {
@@ -137,7 +115,7 @@ function updateUser(id: number, update: User) {
 
 <arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+[^1]: [Подробнее](https://sli.dev/guide/syntax.html#line-highlighting)
 
 <style>
 .footnotes-sep {
@@ -153,14 +131,14 @@ function updateUser(id: number, update: User) {
 
 ---
 
-# Components
+# Компоненты
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+Можно использовать Vue компоненты внутри слайдов.
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+Есть несколько встроенных компонентов, например `<Tweet/>` и `<Youtube/>` которые можно использовать сразу. А добавление своих компонентов очень просто.
 
 ```html
 <Counter :count="10" />
@@ -169,7 +147,7 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 <!-- ./components/Counter.vue -->
 <Counter :count="10" m="t-4" />
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+Подробнее [в официальной документации](https://sli.dev/builtin/components.html).
 
 </div>
 <div>
@@ -188,9 +166,9 @@ Check out [the guides](https://sli.dev/builtin/components.html) for more.
 class: px-20
 ---
 
-# Themes
+# Темы
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+Slidev поставляется с мощной поддержкой тем. Темы могут предоставлять стили, макеты, компоненты или даже конфигурации для инструментов. Переключение между темами осуществляется всего лишь **одной правкой** в frontmatter:
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
@@ -212,16 +190,16 @@ theme: seriph
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+Читайте подробнее [Как использовать тему](https://sli.dev/themes/use.html) и
+посмотрите [Галерею тем](https://sli.dev/themes/gallery.html).
 
 ---
 preload: false
 ---
 
-# Animations
+# Анимации
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
+Анимации осуществляются с помощью [@vueuse/motion](https://motion.vueuse.org/).
 
 ```html
 <div
@@ -266,7 +244,7 @@ Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
   </div>
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
+<!-- скрипты настройки vue могут быть напрямую использованы в markdown, и будут влиять только на текущую страницу -->
 <script setup lang="ts">
 const final = {
   x: 0,
@@ -287,7 +265,7 @@ const final = {
   :initial="{ x:35, y: 40, opacity: 0}"
   :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
 
-[Learn More](https://sli.dev/guide/animations.html#motion)
+[Подробнее](https://sli.dev/guide/animations.html#motion)
 
 </div>
 
@@ -295,7 +273,7 @@ const final = {
 
 # LaTeX
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+LaTeX поддерживается из коробки благодаря [KaTeX](https://katex.org/).
 
 <br>
 
@@ -317,32 +295,32 @@ $$
 
 <br>
 
-[Learn more](https://sli.dev/guide/syntax#latex)
+[Подробнее](https://sli.dev/guide/syntax#latex)
 
 ---
 
-# Diagrams
+# Диаграммы
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+Можно создавать диаграммы / графы из текстового описания прямо в Markdown.
 
 <div class="grid grid-cols-2 gap-10 pt-4 -mb-6">
 
 ```mermaid {scale: 0.9}
 sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
+    Алиса->Боб: Привет Боб, как дела?
+    Note over Алиса,Боб: Стандартное взаимодействие
 ```
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+B[Текст] --> C{Решение}
+C -->|Один| D[Результат 1]
+C -->|Два| E[Результат 2]
 ```
 
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+[Подробнее](https://sli.dev/guide/syntax.html#diagrams)
 
 
 ---
@@ -350,6 +328,6 @@ layout: center
 class: text-center
 ---
 
-# Learn More
+# Ознакомиться подробнее
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+[Документация](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Примеры](https://sli.dev/showcases.html)
